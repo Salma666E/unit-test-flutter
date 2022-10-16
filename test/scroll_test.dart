@@ -14,7 +14,6 @@ void main() {
     final itemFinder = find.byKey(const ValueKey('item_50_text'));
     //scrollUntilVisible 0, 1, ... ,9
     //scrollUntilUnvisitable 10, 11, ... ,1000
-
     //كان بيعطى ايرور لحد مكتبنا هذا السطر  => scrollUntilVisible
     // Scroll until the item to be found appears.
     await tester.scrollUntilVisible(

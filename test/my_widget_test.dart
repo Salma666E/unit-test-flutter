@@ -14,8 +14,8 @@ void main() {
     // Create the widget by telling the tester to build it.
     // Renders the UI from the given widget . Calls runApp with the given widget,
     await tester.pumpWidget(const MyWidget(title: 'T', message: 'M'));
-    final titleFinder = find.text('T');
-    final messageFinder = find.text('M');
+    final titleFinder = find.text('T'); //is there text of T on your screen?
+    final messageFinder = find.text('M'); //is there text of M on your screen?
 
     // Use the `findsOneWidget` matcher provided by flutter_test to verify
     // that the Text widgets appear exactly once in the widget tree.
@@ -43,7 +43,7 @@ void main() {
     const childWidget = Padding(padding: EdgeInsets.zero);
 
     // Provide the childWidget to the Container.
-    await tester.pumpWidget(Container(child: childWidget));
+    await tester.pumpWidget(childWidget);
 
     // Search for the childWidget in the tree and verify it exists.
     expect(find.byWidget(childWidget), findsOneWidget);

@@ -10,9 +10,9 @@ void main() {
 
       counter.increment();
 
-      expect(Counter().value, 0);
+      expect(Counter().value, 0);// expect == المتوقع
 
-      expect(counter.value, 1); // expect == المتوقع
+      expect(counter.value, 1); 
     });
     test('value should be decremented', () {
       final counter = Counter();
