@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:test/onclick_widget.dart';
+import 'package:test/testing_integration_app/test_app.dart';
 
 void main() {
-  runApp(const TodoList());
+  runApp(const TestingApp());
+  // runApp(const TodoList());
   // runApp(const MyApp());
 }
 

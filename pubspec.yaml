@@ -30,6 +30,8 @@ dependencies:
   flutter:
     sdk: flutter
   http:
+  provider:
+  dio:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,6 +40,8 @@ dependencies:
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  integration_test:
     sdk: flutter
   mockito: 
   build_runner: 
